@@ -1,0 +1,116 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .question {
+      margin-bottom: 10px;
+    }
+    .answer {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+    <main class ="main">
+      <header class = "header">
+
+      </header>
+        <div class = "quiz-container">
+          <section class="quiz-section">
+            <div class="quiz-box">
+              <h1>Skin Quiz</h1>
+              <div class="quiz-header">
+                <span></span>
+                <!-- <span class="header-score">Score: 0/5</span> -->
+              </div>
+
+              <h2 class="question-text">What is your skin type?</h2>
+
+
+              <div class="option-list">
+                <!-- <div class="option">
+                  <span>A. Oily</span>
+                </div>
+                <div class="option">
+                  <span>B. Dry</span>
+                </div>
+                <div class="option">
+                  <span>C. combination</span>
+                </div>
+                <div class="option">
+                  <span>D. Normal</span>
+                </div> -->
+              </div>
+              <div class="quiz-footer">
+                <span class = "question-total">1 of 10  Questions</span>
+                <button class = next-btn>Next</button>
+              </div>
+            </div>
+            <div class="result-box">
+              <h2>Your Result!!</h2>
+              <p id="Result-message">nothing</p>
+              <div class="percentage-container">
+                <!-- <div class="circular-progress">
+                  <span class="progress-value">0%</span>
+                </div>
+                <span class="score-text">Your Score 0 out of 10</span> -->
+              </div>
+              <div class="buttons">
+                <button class = "tryAgain-btn" onclick="refresh()">Try Again</button>
+                <button class = "goHome-btn"><a href="../index.html">Go to Home</a></button>
+              </div>
+            </div>
+
+          </section>
+
+
+
+
+            <section class="quiz-home">
+              <div class="quiz-home_content">
+                  <h1 id="quizTitle"> Skin Care Quiz </h1>
+                  <p>
+                      Take the quiz for  a better understanding of your skin type and  how best you can take care of it.
+                  </p>
+                  <button class = "Start-btn">Start Quiz</button>
+              </div>
+          </section>
+        </div>
+    </main>
+
+  <div class="popup-info">
+    <h2>
+      Quiz Guide
+    </h2>
+    <span class="info">1.Lorem  ipsum dolor sit amet consectetur </span>
+    <span class="info">1.Lorem  ipsum dolor sit amet consectetur adipisicing </span>
+    <span class="info">1.Lorem  ipsum dolor sit amet cons.</span>
+    <span class="info">1.Lorem  ipsum dolor sit amet consectetur adipisicing elit.</span>
+    <span class="info">1.Lorem  ipsum dolor sit amet consectetur adipisicing elit.</span>
+
+
+    <div class="btn-group">
+      <button class = "info-btn exit-btn">Exit Quiz</button>
+      <a href = "#" class = "info-btn continue-btn">Continue</a>
+    </div>
+  </div>
+
+
+
+<script src = "questions.js"></script>
+<script src="inner.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
